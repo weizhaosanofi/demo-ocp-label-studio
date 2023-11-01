@@ -1,6 +1,7 @@
 FROM docker.io/heartexlabs/label-studio:ubi_latest
 
 ENV DEBUG=true
+ENV DATA_UPLOAD_MAX_MEMORY_SIZE=100000000000
 
 # update: label-studio version
 RUN pip install --no-cache -U \
